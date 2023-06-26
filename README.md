@@ -51,3 +51,14 @@ Now the app will start at your localHost
   ![Screenshot 2023-06-27 001144](https://github.com/parteekahlawat/youngAi/assets/72187356/3b06363b-ffa3-4bed-ba2b-5cb5f6bd1011)
 
   as shown above I have searched for the username - "Moriah.Stanton" that's how the data will be shown
+
+
+# App view - Replit
+
+**You can see the app online** - https://youngai.parteekahlawat.repl.co/
+
+Above is the live view of the app
+
+
+
+# Thank You
