@@ -1,0 +1,46 @@
+.search{
+    padding: 1rem;
+    margin: 1rem;
+}
+input{
+    padding: .8rem;
+    font-size: 1.2rem;
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 1rem;
+    border: .1rem solid black;
+}
+table {
+    border: .1rem solid #606C5D;
+    border-radius: .2rem;
+    padding: 1rem;
+    margin: 2rem 1rem 1rem 2rem;
+}
+
+th {
+    background: #080202;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+td {
+    padding: .5rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    margin: 1rem 2rem 1rem 2rem;
+    color: white;
+    padding: .5rem 1rem .5rem 1rem;
+    background: #080202;
+    border-color: transparent;
+    border-radius: .5rem;
+}
+.total{
+    margin: .5rem 0rem 0rem 2rem;
+    padding: 0 0 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
