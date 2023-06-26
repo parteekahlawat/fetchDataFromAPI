@@ -6,7 +6,6 @@ function Dashboard() {
   const [search, setSearch] = useState("");
   const [display, setDisplay] = useState({});
 
-
   //Fetch Data from API and set it to data
   const fetchdata = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -20,21 +19,21 @@ function Dashboard() {
     fetchdata();
   }, []);
 
-  //Sort by Name button 
+  //Sort by Name button
   const sortbyName = () => {
     const updatenames = [...data].sort((a, b) => (a.name > b.name ? 1 : -1));
     console.log(updatenames);
     setData(updatenames);
   };
 
-  //Sort by ID button 
+  //Sort by ID button
   const sortbyID = () => {
     const updateID = [...data].sort((a, b) => (a.id > b.id ? 1 : -1));
     console.log(updateID);
     setData(updateID);
   };
 
-  //Sort by City button 
+  //Sort by City button
   const sortbyCity = () => {
     const updateCity = [...data].sort((a, b) =>
       a.address.city > b.address.city ? 1 : -1
@@ -42,7 +41,6 @@ function Dashboard() {
     console.log(updateCity);
     setData(updateCity);
   };
-
 
   //Set searched value to search
   const searchElement = (event) => {
@@ -68,7 +66,7 @@ function Dashboard() {
   //Jsx
   return (
     <>
-    {/* Show data table --------------------------*/}
+      {/* Show data table --------------------------*/}
       <table>
         <thead>
           <tr>
@@ -110,8 +108,6 @@ function Dashboard() {
         Sort By City
       </button>
 
-
-
       {/* search input --------------------------------*/}
       <div className="search">
         <input
@@ -120,26 +116,28 @@ function Dashboard() {
           value={search}
           onChange={searchElement}
         />
-        <button className="btn"onClick={displayValue}>Search</button>
+        <button className="btn" onClick={displayValue}>
+          Search
+        </button>
       </div>
 
       {/* Display searched value -----------------------------*/}
       <div className="display-search">
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Name</th>
-              <th>Username</th>
-              <th>Email</th>
-              <th>Company</th>
-              <th>City</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((user) => {
-              if (display.id === user.id) {
-                return (
+        {data.map((user) => {
+          if (display.id === user.id) {
+            return (
+              <table>
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Company</th>
+                    <th>City</th>
+                  </tr>
+                </thead>
+                <tbody>
                   <tr>
                     <td>{display.id}</td>
                     <td>{display.name}</td>
@@ -148,11 +146,11 @@ function Dashboard() {
                     <td>{user.company.name}</td>
                     <td>{user.address.city}</td>
                   </tr>
-                );
-              }
-            })}
-          </tbody>
-        </table>
+                </tbody>
+              </table>
+            );
+          }
+        })}
       </div>
     </>
   );
