@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# YoungAi
+### How to run
+---**Run these in terminal**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+step1 - get clone of this repo in your system
 
-## Available Scripts
+step2 - cd ./youngAi
 
-In the project directory, you can run:
+step3 - "npm install" -run this command in terminal
 
-### `npm start`
+step4 - "npm start"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Now the app will start at your localHost
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Display of Data
 
-### `npm test`
+1) The table contains the data fetched from the API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   Table shows the fetched data from API
 
-### `npm run build`
+![Screenshot 2023-06-26 235939](https://github.com/parteekahlawat/youngAi/assets/72187356/c667036e-f842-4787-a294-63498c57bb01)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2) Just below the table the value of total number enteries is written
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot 2023-06-27 000312](https://github.com/parteekahlawat/youngAi/assets/72187356/400b5e08-cb14-490b-b06c-5153352a7531)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+3) Now, 3 buttons are shown which sort the data in the table by name, id, city name
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   **Sort by name** - Sort the data in table by name column in table
+   
+   **Sort by ID** - Sort the data in table by name column in ID
+   
+   **Sort by City** - Sort the data in table by name column in City
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ![Screenshot 2023-06-27 000704](https://github.com/parteekahlawat/youngAi/assets/72187356/884a513c-6e42-4ae0-bedf-1a77ef703a4f)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4) For searching in data table the search bar is given by username
 
-## Learn More
+   **Please enter the value of username you want in search box**
+   
+   when Nothing is given to search it will **alert - Please enter value**
+   
+   when the entered value is not found it will **alert - Not Found**
+   
+   ![Screenshot 2023-06-27 001038](https://github.com/parteekahlawat/youngAi/assets/72187356/11da7848-3e74-4478-8f0d-dd7340e4ba1f)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  when the value is found then the data will be displayed as
+  
+  ![Screenshot 2023-06-27 001144](https://github.com/parteekahlawat/youngAi/assets/72187356/3b06363b-ffa3-4bed-ba2b-5cb5f6bd1011)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  as shown above I have searched for the username - "Moriah.Stanton" that's how the data will be shown
