@@ -1,4 +1,4 @@
-# YoungAi
+# YouseAi
 ### How to run
 ---**Run these in terminal**
 
