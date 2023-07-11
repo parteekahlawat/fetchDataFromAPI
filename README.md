@@ -1,4 +1,5 @@
-# YouseAi
+# fetchDataFromAPI
+
 ### How to run
 ---**Run these in terminal**
 
