@@ -4,7 +4,7 @@
 
 step1 - get clone of this repo in your system
 
-step2 - cd ./youngAi
+step2 - cd ./fetchDataFromAPI
 
 step3 - "npm install" -run this command in terminal
 
